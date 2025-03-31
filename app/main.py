@@ -1,4 +1,4 @@
-from . import asyncio_path
+import asyncio_path
 
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
