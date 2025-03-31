@@ -1,3 +1,4 @@
+import asyncio_patch
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import os
@@ -18,7 +19,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.post("/api/")
 async def process_question(
